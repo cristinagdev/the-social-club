@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página del listado de eventos en The social club"
+    />
+    <title>Eventos - The Social Club</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/events.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="events__body">
+    <header class="header">
+      <nav class="header__nav block_container">
+        <ul class="header__ul">
+          <li><a class="link" href="index.html" title="Inicio">Inicio</a></li>
+          <li>
+            <a class="link isActive" href="events.html" title="Planes"
+              >Planes</a
+            >
+          </li>
+          <li>
+            <a class="link" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <a href="index.html">
+          <img class="logo" src="./assets/logo.svg" alt="logo" />
+        </a>
+
+        <button class="header__btn" aria-label="Abrir menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </nav>
+      <nav class="header__nav--mobile">
+        <ul class="header__ul--mobile">
+          <li><a class="link" href="index.html" title="Inicio">Inicio</a></li>
+          <li>
+            <a class="link" href="events.html" title="Planes">Planes</a>
+          </li>
+          <li>
+            <a class="link" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <button class="header__btn" aria-label="Cerrar menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#close"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner section -->
+      <section class="events__banner block_container">
+        <div>
+          <h1>Planes que te sacan de la rutina</h1>
+          <h2>Gente que merece la pena</h2>
+        </div>
+      </section>
+
+      <!-- Filters section -->
+      <section>
+        <div class="filters block_container">
+          <h4>Filtros</h4>
+
+          <div class="filters__btn">
+            <button
+              class="event__btn btn__secondary"
+              data-category="creative"
+              aria-label="Filtrar eventos creativos"
+            >
+              Creativos
+              <svg width="20" height="20">
+                <use href="./assets/icons.svg#palette"></use>
+              </svg>
+            </button>
+
+            <button
+              class="event__btn btn__secondary"
+              data-category="social"
+              aria-label="Filtrar eventos sociales"
+            >
+              Sociales
+              <svg width="20" height="20">
+                <use href="./assets/icons.svg#wine"></use>
+              </svg>
+            </button>
+
+            <button
+              class="event__btn btn__secondary"
+              data-category="adventure"
+              aria-label="Filtrar eventos aventureros"
+            >
+              Aventureros
+              <svg width="20" height="20">
+                <use href="./assets/icons.svg#mountains"></use>
+              </svg>
+            </button>
+
+            <button
+              class="event__btn btn__secondary"
+              data-category="cultural"
+              aria-label="Filtrar eventos culturales"
+            >
+              Cultura y Música
+              <svg width="20" height="20">
+                <use href="./assets/icons.svg#music"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal form -->
+
+      <dialog id="dialog">
+        <button
+          id="cancel"
+          class="dialog__close"
+          type="reset"
+          aria-label="Cerrar formulario"
+        >
+          <svg width="20" height="20">
+            <use href="./assets/icons.svg#close"></use>
+          </svg>
+        </button>
+        <h3></h3>
+
+        <form class="form" action="#" method="dialog">
+          <div class="input__data">
+            <input name="name" type="text" required id="name" />
+            <label for="name">Tu nombre</label>
+          </div>
+          <div class="input__data">
+            <input name="email" type="text" required id="email" />
+            <label for="email">Tu email</label>
+          </div>
+          <div class="input__data">
+            <input name="phone" type="text" required id="phone" />
+            <label for="phone">Tu teléfono</label>
+          </div>
+
+          <div class="input__data">
+            <textarea
+              name="reason"
+              id="reason"
+              rows="8"
+              cols="80"
+              required
+            ></textarea>
+            <label for="reason">¿Quieres contarnos algo?</label>
+          </div>
+
+          <div class="input__data">
+            <input
+              type="text"
+              id="fecha_nacimiento"
+              name="fecha_nacimiento"
+              required
+            />
+            <label for="fecha_nacimiento">Fecha de nacimiento (opcional)</label>
+          </div>
+
+          <div class="input__select">
+            <label for="fuente">¿Cómo te enteraste del evento?</label>
+            <select id="fuente" name="fuente">
+              <option value="redes_sociales" selected>Redes sociales</option>
+              <option value="correo_electronico">Correo electrónico</option>
+              <option value="boca_a_boca">Boca a boca</option>
+              <option value="otra">Otra</option>
+            </select>
+          </div>
+
+          <input type="submit" value="Enviar" class="btn__primary" />
+        </form>
+      </dialog>
+
+      <!-- Events section -->
+      <section>
+        <div class="events block_container"></div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer__block block_container">
+        <p>
+          Menos scroll, más momentos que valen la pena. Únete a The Social Club.
+          ✨
+        </p>
+
+        <div class="contact__block">
+          <div class="contact__data">
+            <h3>Contacto</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#envelope"></use>
+                </svg>
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >hola@thesocialclub.com
+                </a>
+              </li>
+
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#phone"></use>
+                </svg>
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Sobre nosotros</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >Política de privacidad</a
+                >
+              </li>
+
+              <li class="footer__li">
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img src="./assets/footer-logo.svg" alt="Logo The Social Club" />
+        <small>Cristina García | 2025</small>
+      </div>
+    </footer>
+  </body>
+</html>

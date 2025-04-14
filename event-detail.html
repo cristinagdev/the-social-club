@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de detalle del evento seleccionado"
+    />
+    <title>Detalle Evento - The Social Club</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/event-detail.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="detail__body">
+    <header class="header">
+      <nav class="header__nav block_container">
+        <ul class="header__ul">
+          <li><a class="link" href="index.html" title="Inicio">Inicio</a></li>
+          <li>
+            <a class="link isActive" href="events.html" title="Planes"
+              >Planes</a
+            >
+          </li>
+          <li>
+            <a class="link" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <a href="index.html">
+          <img class="logo" src="./assets/logo.svg" alt="logo" />
+        </a>
+
+        <button class="header__btn" aria-label="Abrir menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </nav>
+      <nav class="header__nav--mobile">
+        <ul class="header__ul--mobile">
+          <li><a class="link" href="index.html" title="Inicio">Inicio</a></li>
+          <li>
+            <a class="link" href="events.html" title="Planes">Planes</a>
+          </li>
+          <li>
+            <a class="link" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <button class="header__btn" aria-label="Cerrar menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#close"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Event detail section -->
+      <section>
+        <div class="detail__block block_container">
+          <h1></h1>
+          <div class="detail__image"></div>
+          <div class="detail__info">
+            <div class="detail__date"></div>
+            <div class="detail__description"></div>
+            <div class="detail__steps"></div>
+          </div>
+
+          <div class="detail__btn">
+            <h3>¿Te apuntas?</h3>
+            <p>Reserva tu plaza y únete a la experiencia.</p>
+            <a class="btn__primary modal__btn" href="#" title="Me apunto"
+              >¡Sí, voy!
+              <svg width="20" height="20">
+                <use href="./assets/icons.svg#arrow-up-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal form section -->
+
+      <dialog id="dialog">
+        <button
+          id="cancel"
+          class="dialog__close"
+          type="reset"
+          aria-label="Cerrar formulario"
+        >
+          <svg width="20" height="20">
+            <use href="./assets/icons.svg#close"></use>
+          </svg>
+        </button>
+        <h3></h3>
+
+        <form class="form" action="#" method="dialog">
+          <div class="input__data">
+            <input name="name" type="text" id="name" required />
+            <label for="name">Tu nombre</label>
+          </div>
+          <div class="input__data">
+            <input name="email" type="text" required id="email" />
+            <label for="email">Tu email</label>
+          </div>
+          <div class="input__data">
+            <input name="phone" type="text" required id="phone" />
+            <label for="phone">Tu teléfono</label>
+          </div>
+
+          <div class="input__data">
+            <textarea
+              name="reason"
+              id="reason"
+              rows="8"
+              cols="80"
+              required
+            ></textarea>
+            <label for="reason">¿Quieres contarnos algo?</label>
+          </div>
+
+          <div class="input__data">
+            <input
+              type="text"
+              id="fecha_nacimiento"
+              name="fecha_nacimiento"
+              required
+            />
+            <label for="fecha_nacimiento">Fecha de nacimiento (opcional)</label>
+          </div>
+
+          <div class="input__select">
+            <label for="fuente">¿Cómo te enteraste del evento?</label>
+            <select id="fuente" name="fuente">
+              <option value="redes_sociales" selected>Redes sociales</option>
+              <option value="correo_electronico">Correo electrónico</option>
+              <option value="boca_a_boca">Boca a boca</option>
+              <option value="otra">Otra</option>
+            </select>
+          </div>
+
+          <input type="submit" value="Enviar" class="btn__primary" />
+        </form>
+      </dialog>
+
+      <!-- Faqs section -->
+
+      <section>
+        <div class="faqs__block block_container">
+          <h3>Por si aún tienes dudas</h3>
+          <div class="faq__box">
+            <div class="faq__div">
+              <div class="faq__title">
+                <h4>¿Puedo ir solo/a o es mejor en grupo?</h4>
+                <svg width="30" height="30" class="faq__arrow">
+                  <use href="./assets/icons.svg#arrow-right"></use>
+                </svg>
+              </div>
+
+              <div class="faq__content">
+                <p>
+                  ¡Claro! Mucha gente viene sola y acaba haciendo amigos. La
+                  idea es conectar con personas nuevas sin presiones.
+                </p>
+              </div>
+            </div>
+            <div class="faq__div">
+              <div class="faq__title">
+                <h4>¿Qué pasa si al final no puedo ir?</h4>
+                <svg width="30" height="30" class="faq__arrow">
+                  <use href="./assets/icons.svg#arrow-right"></use>
+                </svg>
+              </div>
+
+              <div class="faq__content">
+                <p>
+                  Si es un evento gratuito, solo avísanos para liberar tu plaza.
+                  Si has pagado, revisa la política de cancelación en la
+                  descripción del evento.
+                </p>
+              </div>
+            </div>
+            <div class="faq__div">
+              <div class="faq__title">
+                <h4>¿Hay límite de edad para participar?</h4>
+                <svg width="30" height="30" class="faq__arrow">
+                  <use href="./assets/icons.svg#arrow-right"></use>
+                </svg>
+              </div>
+
+              <div class="faq__content">
+                <p>
+                  Depende del evento, pero la mayoría son para adultos (+18). Si
+                  hay alguna restricción, lo indicamos en la info del plan.
+                </p>
+              </div>
+            </div>
+            <div class="faq__div">
+              <div class="faq__title">
+                <h4>¿Cómo sé dónde es el punto de encuentro?</h4>
+                <svg width="30" height="30" class="faq__arrow">
+                  <use href="./assets/icons.svg#arrow-right"></use>
+                </svg>
+              </div>
+
+              <div class="faq__content">
+                <p>
+                  Cuando te inscribas, recibirás un email con todos los
+                  detalles. También te mandaremos un recordatorio el día antes
+                  del evento.
+                </p>
+              </div>
+            </div>
+            <div class="faq__div">
+              <div class="faq__title">
+                <h4>¿Los eventos se cancelan si hace mal tiempo?</h4>
+                <svg width="30" height="30" class="faq__arrow">
+                  <use href="./assets/icons.svg#arrow-right"></use>
+                </svg>
+              </div>
+
+              <div class="faq__content">
+                <p>
+                  Si el evento es al aire libre y la previsión es mala, te
+                  avisaremos con antelación y buscaremos una alternativa o nueva
+                  fecha.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__div">
+              <div class="faq__title">
+                <h4>¿Puedo llevar a un amigo aunque no esté inscrito?</h4>
+                <svg width="30" height="30" class="faq__arrow">
+                  <use href="./assets/icons.svg#arrow-right"></use>
+                </svg>
+              </div>
+
+              <div class="faq__content">
+                <p>
+                  Depende del evento. Algunos tienen aforo limitado, así que
+                  mejor que se apunte antes para asegurarse su plaza.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer__block block_container">
+        <p>
+          Menos scroll, más momentos que valen la pena. Únete a The Social Club.
+          ✨
+        </p>
+
+        <div class="contact__block">
+          <div class="contact__data">
+            <h3>Contacto</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#envelope"></use>
+                </svg>
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >hola@thesocialclub.com
+                </a>
+              </li>
+
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#phone"></use>
+                </svg>
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Sobre nosotros</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >Política de privacidad</a
+                >
+              </li>
+
+              <li class="footer__li">
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img src="./assets/footer-logo.svg" alt="Logo The Social Club" />
+        <small>Cristina García | 2025</small>
+      </div>
+    </footer>
+  </body>
+</html>

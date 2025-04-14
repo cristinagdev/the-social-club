@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página indice del proyecto The social club"
+    />
+    <title>The Social Club</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav block_container">
+        <ul class="header__ul">
+          <li>
+            <a class="link isActive" href="index.html" title="Inicio">Inicio</a>
+          </li>
+          <li>
+            <a class="link" href="events.html" title="Planes">Planes</a>
+          </li>
+          <li>
+            <a class="link" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <a href="index.html">
+          <img class="logo" src="./assets/logo.svg" alt="logo" />
+        </a>
+
+        <button class="header__btn" aria-label="Abrir menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </nav>
+      <nav class="header__nav--mobile">
+        <ul class="header__ul--mobile">
+          <li><a class="link" href="index.html" title="Inicio">Inicio</a></li>
+          <li>
+            <a class="link" href="events.html" title="Planes">Planes</a>
+          </li>
+          <li>
+            <a class="link" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <button class="header__btn" aria-label="Cerrar menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#close"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="banner">
+        <div class="banner__block block_container">
+          <div class="banner__content">
+            <h2 class="banner__title">Somos</h2>
+            <h1 class="banner__title">The Social Club</h1>
+
+            <p class="banner__text">
+              Cero excusas, solo planes épicos y gente increíble.
+            </p>
+            <a
+              href="events.html"
+              class="btn__primary"
+              title="Descubre tu próximo plan"
+              >Descubre tu próximo plan</a
+            >
+          </div>
+          <div class="banner__btn"></div>
+        </div>
+      </section>
+
+      <!-- Gallery section -->
+      <div class="gallery__wrapper block_container">
+        <div class="gallery__content">
+          <picture>
+            <source srcset="./assets/gallery1.webp" type="image/webp" />
+            <img
+              class="width"
+              src="./assets/gallery1.jpg"
+              alt="Amigos saludando a la camara en una foto"
+            />
+          </picture>
+          <picture>
+            <source srcset="./assets/gallery2.webp" type="image/webp" />
+            <img
+              class="long"
+              src="./assets/gallery2.jpg"
+              alt="Mujer con una copa de vino escuchando musica"
+            />
+          </picture>
+          <picture class="width">
+            <source
+              class="width"
+              srcset="./assets/gallery3.webp"
+              type="image/webp"
+            />
+            <img
+              class="width"
+              src="./assets/gallery3.jpg"
+              alt="Amigos disfrutando en un aterraza"
+            />
+          </picture>
+          <picture>
+            <source srcset="./assets/gallery4.webp" type="image/webp" />
+            <img
+              class="long"
+              src="./assets/gallery4.jpg"
+              alt="Amigos sentados al sol tomando una bebida"
+            />
+          </picture>
+          <picture>
+            <source srcset="./assets/gallery5.webp" type="image/webp" />
+            <img
+              class="width"
+              src="./assets/gallery5.jpg"
+              alt="Amigos sentados delante de un coche mirando a al camara"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- Description Section  -->
+      <section class="description">
+        <div class="description__block block_container">
+          <div class="description__info">
+            <h2 class="big">Planes que cuentan</h2>
+            <p>
+              Dile adiós a los domingos de sofá y a los grupos de WhatsApp que
+              nunca concretan nada. En The Social Club, los planes sí que salen.
+              Únete a experiencias únicas y conoce gente auténtica.
+            </p>
+            <div class="reasons__icons">
+              <div class="icon__card">
+                <p class="card__number">01</p>
+                <h3>Explora</h3>
+                <p>
+                  Desde brunchs hasta experiencias creativas. Mil planes para
+                  elegir y concoer gente nueva
+                </p>
+              </div>
+
+              <div class="icon__card">
+                <p class="card__number">02</p>
+                <h3>Apúntate</h3>
+                <p>
+                  Tú eliges el plan que más te guste, nosotros nos encargamos de
+                  todo.
+                </p>
+              </div>
+
+              <div class="icon__card">
+                <p class="card__number">03</p>
+                <h3>Disfruta</h3>
+                <p>
+                  Conoce gente auténtica, haz algo diferente y llévate una
+                  historia que contar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="description__card">
+            <div class="card__polaroid">
+              <picture>
+                <source srcset="./assets/outdoor.webp" type="image/webp" />
+                <img
+                  src="./assets/outdoor.jpg"
+                  alt="Amigos disfrutando en el campo"
+                />
+              </picture>
+
+              <div class="card__bottom"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image section  -->
+      <div class="image__section section">
+        <div class="image__block block_container">
+          <div class="image__text">
+            <h2 class="big">Hazlo distinto.</h2>
+            <h2 class="big">Hazlo Social.</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events section -->
+      <section class="events">
+        <div class="events__block block_container">
+          <div class="events__title">
+            <h2 class="big">Próximos eventos</h2>
+            <h3>Hay un plan para ti.</h3>
+            <h3>Y para tus múltiples versiones también.</h3>
+          </div>
+
+          <div class="events__container">
+            <div class="cards__container">
+              <div class="event__card">
+                <picture>
+                  <source srcset="./assets/adventure.webp" type="image/webp" />
+                  <img
+                    src="./assets/adventure.jpg"
+                    alt="Amigos haciendo senderismo"
+                  />
+                </picture>
+
+                <div class="card__content">
+                  <p>Escapada de Senderismo y Yoga</p>
+                  <a
+                    class="link__secondary"
+                    href="events.html"
+                    title="Descubre más"
+                    >Descubre más</a
+                  >
+                </div>
+              </div>
+              <div class="event__card">
+                <picture>
+                  <source srcset="./assets/social.webp" type="image/webp" />
+                  <img
+                    src="./assets/social.jpg"
+                    alt="Amigos pasandolo bien en la calle"
+                  />
+                </picture>
+
+                <div class="card__content">
+                  <p>Tour Gastronómico Multicultural</p>
+                  <a
+                    class="link__secondary"
+                    href="events.html"
+                    title="Descubre más"
+                    >Descubre más</a
+                  >
+                </div>
+              </div>
+
+              <div class="event__card">
+                <picture>
+                  <source srcset="./assets/paint.webp" type="image/webp" />
+                  <img
+                    src="./assets/paint.jpg"
+                    alt="Dos amigas pintando juntas"
+                  />
+                </picture>
+
+                <div class="card__content">
+                  <p>Taller de Pintura Moderna</p>
+                  <a
+                    class="link__secondary"
+                    href="events.html"
+                    title="Descubre más"
+                    >Descubre más</a
+                  >
+                </div>
+              </div>
+              <div class="event__card">
+                <picture>
+                  <source srcset="./assets/cultural.webp" type="image/webp" />
+                  <img
+                    src="./assets/cultural.jpg"
+                    alt="Amigos mirando un mapa de la ciudad"
+                  />
+                </picture>
+
+                <div class="card__content">
+                  <p>Película + Debate con Cervezas</p>
+                  <a
+                    class="link__secondary"
+                    href="events.html"
+                    title="Descubre más"
+                    >Descubre más</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="events__link">
+              <a
+                class="link__secondary"
+                href="events.html"
+                title="Ver más planes"
+              >
+                Ver más planes
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#arrow-up-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+
+      <section>
+        <div class="testimonials__block block_container">
+          <div>
+            <h2 class="big">Testimonios</h2>
+            <h3 class="big">Esto dicen los que se unieron</h3>
+          </div>
+
+          <svg
+            width="40"
+            height="40"
+            data-direction="prev"
+            class="testimonial__btn prev__btn"
+          >
+            <use href="./assets/icons.svg#arrow-left"></use>
+          </svg>
+
+          <svg
+            width="40"
+            height="40"
+            data-direction="next"
+            class="testimonial__btn next__btn"
+          >
+            <use href="./assets/icons.svg#arrow-right"></use>
+          </svg>
+
+          <div class="testimonials__wrapper">
+            <div class="testimonial__card">
+              <p>
+                Fui sola a un evento y terminé con un grupo de amigos con los
+                que ahora no paro de hacer planes. Esto es magia social,
+                literal.
+              </p>
+              <p>Lucía M.</p>
+            </div>
+
+            <div class="testimonial__card">
+              <p>
+                The Social Club me devolvió las ganas de hacer cosas distintas.
+                Ya no hay fines de semana aburridos.
+              </p>
+              <p>Javi R.</p>
+            </div>
+            <div class="testimonial__card">
+              <p>
+                Lo que más me gusta es que la gente viene con buena vibra. Nada
+                forzado, todo fluye.
+              </p>
+              <p>Carmen G.</p>
+            </div>
+            <div class="testimonial__card">
+              <p>
+                Probé por curiosidad y acabé en una cata de vinos con
+                desconocidos hablando de la vida. 10/10.
+              </p>
+              <p>Sergio T.</p>
+            </div>
+            <div class="testimonial__card">
+              <p>
+                Eventos súper bien organizados, ambiente chill y un montón de
+                gente con ganas de pasarlo bien.
+              </p>
+              <p>Alicia F.</p>
+            </div>
+            <div class="testimonial__card">
+              <p>
+                Lo mejor es que no tienes que venir acompañado. Te sientes parte
+                desde el minuto uno.
+              </p>
+              <p>Mauro D.</p>
+            </div>
+            <div class="testimonial__card">
+              <p>
+                Nunca pensé que conocer gente nueva fuera tan fácil (y tan poco
+                incómodo). Gracias por hacerlo tan natural.
+              </p>
+              <p>Clara S.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer__block block_container">
+        <p>
+          Menos scroll, más momentos que valen la pena. Únete a The Social Club.
+          ✨
+        </p>
+
+        <div class="contact__block">
+          <div class="contact__data">
+            <h3>Contacto</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#envelope"></use>
+                </svg>
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >hola@thesocialclub.com
+                </a>
+              </li>
+
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#phone"></use>
+                </svg>
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Sobre nosotros</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >Política de privacidad</a
+                >
+              </li>
+
+              <li class="footer__li">
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img src="./assets/footer-logo.svg" alt="Logo The Social Club" />
+        <small>Cristina García | 2025</small>
+      </div>
+    </footer>
+  </body>
+</html>

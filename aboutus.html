@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Página de información sobre el equipo de The social club"
+  />
+    <title>Sobre nosotros - The Social Club</title>
+    <script defer src="js/mobile-menu.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav block_container">
+        <ul class="header__ul">
+          <li><a class="link" href="index.html" title="Inicio">Inicio</a></li>
+          <li>
+            <a class="link" href="events.html" title="Planes">Planes</a>
+          </li>
+          <li>
+            <a class="link isActive" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <a href="index.html">
+          <img class="logo" src="./assets/logo.svg" alt="logo" />
+        </a>
+  
+        <button class="header__btn" aria-label="Abrir menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </nav>
+      <nav class="header__nav--mobile">
+        <ul class="header__ul--mobile">
+          <li><a class="link" href="index.html" title="Inicio">Inicio</a></li>
+          <li>
+            <a class="link" href="events.html" title="Planes">Planes</a>
+          </li>
+          <li>
+            <a class="link" href="aboutus.html" title="Sobre nosotros"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <button class="header__btn" aria-label="Cerrar menu movil">
+          <svg width="25" height="25">
+            <use href="./assets/icons.svg#close"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="about block_container">
+
+          <div class="about__team">
+            <div>
+              <h1>Quienes somos</h1>
+              <p class="about__text">
+                Nos cansamos de los chats sin fin, de los ‘ya quedaremos’ que
+                nunca llegan y de los planes de siempre. Así nació The Social
+                Club, una forma diferente de conocer gente, hacer cosas nuevas y
+                llenar la vida de historias que contar. Conocer gente nueva no
+                debería ser raro, incómodo ni cosa de apps. Sin presión. Con
+                gente de tu rollo.
+              </p>
+          </div>
+          <picture>
+            <source srcset="./assets/team.webp" type="image/webp" />
+            <img src="./assets/team.jpg" alt="Foto de equipo de The Social club" loading="lazy" />
+          </picture>
+
+        </div>
+      </section>
+
+      <!-- Explain section -->
+      <section class="explain__section">
+        <div class="explain__block block_container">
+          <div class="explain__info">
+            <div>
+              <h4>No somos agencia.</h4>
+              <h4>No somos una red social.</h4>
+            </div>
+
+            <div>
+              <p>
+                Somos el punto medio entre el plan improvisado y el momento
+                inolvidable.
+              </p>
+              <p>Hacemos lo que nos gustaría que existiera.</p>
+            </div>
+          </div>
+
+          <div class="moving__box">
+            <p>Planes</p>
+            <div class="moving">
+              <p class="moving__text">que molan</p>
+              <p class="moving__text">que suman</p>
+              <p class="moving__text">que unen</p>
+              <p class="moving__text">que inspiran</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team section -->
+
+      <section>
+        <div class="team__block block_container">
+          <h2>Conoce al equipo</h2>
+          <div class="team__members">
+            <div class="team__card">
+              <picture>
+                <source srcset="./assets/team1.webp" type="image/webp" />
+                <img src="./assets/team1.jpg" loading="lazy" alt="Miembro del equipo de The social club" />
+              </picture>
+              <p>El visionario de las ideas creativas</p>
+            </div>
+            <div class="team__card">
+              <picture>
+                <source srcset="./assets/team2.webp" type="image/webp" />
+                <img src="./assets/team2.jpg"  loading="lazy" alt="Miembro del equipo de The social club" />
+              </picture>
+              <p>La de los planes más aventureros</p>
+            </div>
+            <div class="team__card">
+              <picture>
+                <source srcset="./assets/team3.webp" type="image/webp" />
+                <img src="./assets/team3.jpg"  loading="lazy" alt="Miembro del equipo de The social club" />
+              </picture>
+                <p>El que crea los planes más locos</p>
+            </div>
+            <div class="team__card">
+              <picture>
+                <source srcset="./assets/team4.webp" type="image/webp" />
+                <img src="./assets/team4.jpg"  loading="lazy" alt="Miembro del equipo de The social club" />
+              </picture>
+                <p>La que siempre quiere descubrir cosas nuevas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form section -->
+      <section>
+        <div class="form__block block_container">
+          <div class="form__info">
+            <h4>
+              ¿Tienes una idea para un evento único o un plan genial en mente?
+            </h4>
+            <h4>¡Queremos escucharte!</h4>
+            <p>
+              Si tienes una actividad o evento que te gustaría organizar o ver
+              en nuestra comunidad, estamos abiertos a tus ideas. Completa el
+              formulario a continuación y comparte tu propuesta con nosotros.
+              Estamos siempre en busca de nuevas formas de conectar a las
+              personas de manera divertida y memorable.
+            </p>
+          </div>
+
+          <form class="form" action="#" method="POST">
+            <div class="input__data">
+              <input name="name" type="text" required id="name" />
+              <label for="name">Tu nombre</label>
+            </div>
+            <div class="input__data">
+              <input name="email" type="text" required id="email" />
+              <label for="email">Tu email</label>
+            </div>
+            <div class="input__data">
+              <input name="phone" type="text" required id="phone" />
+              <label for="phone">Tu teléfono</label>
+            </div>
+
+            <div class="input__data">
+              <textarea
+                name="reason"
+                id="reason"
+                rows="8"
+                cols="80"
+                required
+              ></textarea>
+              <label for="reason">Cuéntanos más sobre tu idea</label>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn__primary" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer__block block_container">
+        <p>
+          Menos scroll, más momentos que valen la pena. Únete a The Social Club.
+          ✨
+        </p>
+
+        <div class="contact__block">
+          <div class="contact__data">
+            <h3>Contacto</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#envelope"></use>
+                </svg>
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >hola@thesocialclub.com
+                </a>
+              </li>
+
+              <li class="footer__li">
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#phone"></use>
+                </svg>
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Sobre nosotros</h3>
+            <ul class="footer__menu">
+              <li class="footer__li">
+                <a href="#" title="Email to hola@thesocialclub.com"
+                  >Política de privacidad</a
+                >
+              </li>
+
+              <li class="footer__li">
+                <a href="#" title="+34 111 222 333">+34 111 222 333</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <img src="./assets/footer-logo.svg" alt="Logo The Social Club" />
+        <small>Cristina García | 2025</small>
+      </div>
+    </footer>
+  </body>
+</html>
