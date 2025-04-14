@@ -68,7 +68,7 @@ span {
 }
 
 h1 {
-    font-size: clamp(4rem, 10vw, 6rem);   
+    font-size: clamp(2.5rem, 10vw, 5rem);   
     font-weight: 800;
     font-family: var(--title-font);
     @media (max-width: 768px) {
@@ -192,6 +192,19 @@ p {
     border-bottom: 1px solid transparent;
     &:hover {
         border-bottom: 1px solid var(--secondary);
+    }
+}
+
+.link__back {
+    background-color: var(--primary);
+    border-radius: 50%;
+    color: var(--tertiary);
+    border: 1px solid transparent;
+    transition:background-color .3s ease ;
+    &:hover {
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        background-color: transparent;
     }
 }
 
