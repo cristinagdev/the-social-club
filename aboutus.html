@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-    name="description"
-    content="Página de información sobre el equipo de The social club"
-  />
+      name="description"
+      content="Página de información sobre el equipo de The social club"
+    />
     <title>Sobre nosotros - The Social Club</title>
     <script defer src="js/mobile-menu.js"></script>
     <link rel="stylesheet" href="css/index.css" />
@@ -34,7 +34,7 @@
         <a href="index.html">
           <img class="logo" src="./assets/logo.svg" alt="logo" />
         </a>
-  
+
         <button class="header__btn" aria-label="Abrir menu movil">
           <svg width="25" height="25">
             <use href="./assets/icons.svg#menu"></use>
@@ -63,9 +63,8 @@
     <main>
       <section>
         <div class="about block_container">
-
           <div class="about__team">
-            <div>
+            <div class="about__div">
               <h1>Quienes somos</h1>
               <p class="about__text">
                 Nos cansamos de los chats sin fin, de los ‘ya quedaremos’ que
@@ -75,12 +74,16 @@
                 debería ser raro, incómodo ni cosa de apps. Sin presión. Con
                 gente de tu rollo.
               </p>
+            </div>
+            <picture>
+              <source srcset="./assets/team.webp" type="image/webp" />
+              <img
+                src="./assets/team.jpg"
+                alt="Foto de equipo de The Social club"
+                loading="lazy"
+              />
+            </picture>
           </div>
-          <picture>
-            <source srcset="./assets/team.webp" type="image/webp" />
-            <img src="./assets/team.jpg" alt="Foto de equipo de The Social club" loading="lazy" />
-          </picture>
-
         </div>
       </section>
 
@@ -123,30 +126,50 @@
             <div class="team__card">
               <picture>
                 <source srcset="./assets/team1.webp" type="image/webp" />
-                <img src="./assets/team1.jpg" loading="lazy" alt="Miembro del equipo de The social club" />
+                <img
+                  src="./assets/team1.jpg"
+                  loading="lazy"
+                  alt="Miembro del equipo de The social club"
+                />
               </picture>
+              <p class="team__card--name">PABLO</p>
               <p>El visionario de las ideas creativas</p>
             </div>
             <div class="team__card">
               <picture>
                 <source srcset="./assets/team2.webp" type="image/webp" />
-                <img src="./assets/team2.jpg"  loading="lazy" alt="Miembro del equipo de The social club" />
+                <img
+                  src="./assets/team2.jpg"
+                  loading="lazy"
+                  alt="Miembro del equipo de The social club"
+                />
               </picture>
+              <p class="team__card--name">ELENA</p>
               <p>La de los planes más aventureros</p>
             </div>
-            <div class="team__card">
+            <div class="team__card prueba">
               <picture>
                 <source srcset="./assets/team3.webp" type="image/webp" />
-                <img src="./assets/team3.jpg"  loading="lazy" alt="Miembro del equipo de The social club" />
+                <img
+                  src="./assets/team3.jpg"
+                  loading="lazy"
+                  alt="Miembro del equipo de The social club"
+                />
               </picture>
-                <p>El que crea los planes más locos</p>
+              <p class="team__card--name">JORGE</p>
+              <p>El que crea los planes más locos</p>
             </div>
             <div class="team__card">
               <picture>
                 <source srcset="./assets/team4.webp" type="image/webp" />
-                <img src="./assets/team4.jpg"  loading="lazy" alt="Miembro del equipo de The social club" />
+                <img
+                  src="./assets/team4.jpg"
+                  loading="lazy"
+                  alt="Miembro del equipo de The social club"
+                />
               </picture>
-                <p>La que siempre quiere descubrir cosas nuevas</p>
+              <p class="team__card--name">MARIA</p>
+              <p>La que siempre quiere descubrir cosas nuevas</p>
             </div>
           </div>
         </div>
@@ -159,7 +182,15 @@
             <h4>
               ¿Tienes una idea para un evento único o un plan genial en mente?
             </h4>
-            <h4>¡Queremos escucharte!</h4>
+            <div class="form__svg">
+              <h4>¡Queremos escucharte!</h4>
+              <img
+                src="./assets/eyes.svg"
+                alt="logo svg de unos ojos"
+                loading="lazy"
+              />
+            </div>
+
             <p>
               Si tienes una actividad o evento que te gustaría organizar o ver
               en nuestra comunidad, estamos abiertos a tus ideas. Completa el
@@ -245,7 +276,6 @@
             </ul>
           </div>
         </div>
-
 
         <img src="./assets/footer-logo.svg" alt="Logo The Social Club" />
         <small>Cristina García | 2025</small>

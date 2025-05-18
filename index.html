@@ -137,9 +137,49 @@
         </div>
       </div>
 
+      <!-- Reasons section -->
+      <div class="reasons">
+        <div class="reasons__icons block_container">
+          <div class="icon__card">
+            <p class="card__number">01</p>
+            <h3>Explora</h3>
+            <p>
+              Desde brunchs hasta experiencias creativas. Mil planes para elegir
+              y conocer gente nueva
+            </p>
+          </div>
+
+          <div class="icon__card">
+            <p class="card__number">02</p>
+            <h3>Apúntate</h3>
+            <p>
+              Tú eliges el plan que más te guste, nosotros nos encargamos de
+              todo.
+            </p>
+          </div>
+
+          <div class="icon__card">
+            <p class="card__number">03</p>
+            <h3>Disfruta</h3>
+            <p>
+              Conoce gente auténtica, haz algo diferente y llévate una historia
+              que contar.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- Description Section  -->
       <section class="description">
         <div class="description__block block_container">
+          <div class="description__card">
+            <img
+              class="smile"
+              src="./assets/smile.svg"
+              alt="Logo de una cara sonriente"
+              loading="lazy"
+            />
+          </div>
           <div class="description__info">
             <h2 class="big">Planes que cuentan</h2>
             <p>
@@ -147,68 +187,50 @@
               nunca concretan nada. En The Social Club, los planes sí que salen.
               Únete a experiencias únicas y conoce gente auténtica.
             </p>
-            <div class="reasons__icons">
-              <div class="icon__card">
-                <p class="card__number">01</p>
-                <h3>Explora</h3>
-                <p>
-                  Desde brunchs hasta experiencias creativas. Mil planes para
-                  elegir y concoer gente nueva
-                </p>
-              </div>
-
-              <div class="icon__card">
-                <p class="card__number">02</p>
-                <h3>Apúntate</h3>
-                <p>
-                  Tú eliges el plan que más te guste, nosotros nos encargamos de
-                  todo.
-                </p>
-              </div>
-
-              <div class="icon__card">
-                <p class="card__number">03</p>
-                <h3>Disfruta</h3>
-                <p>
-                  Conoce gente auténtica, haz algo diferente y llévate una
-                  historia que contar.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="description__card">
-            <div class="card__polaroid">
-              <picture>
-                <source srcset="./assets/outdoor.webp" type="image/webp" />
+            <div class="highlights">
+              <div class="highlight">
                 <img
-                  src="./assets/outdoor.jpg"
-                  alt="Amigos disfrutando en el campo"
+                  src="./assets/check.svg"
+                  alt="Svg de un icono de checkbox marcado"
                 />
-              </picture>
-
-              <div class="card__bottom"></div>
+                <p>Diversión real, sin filtros.</p>
+              </div>
+              <div class="highlight">
+                <img
+                  src="./assets/check.svg"
+                  alt="Svg de un icono de checkbox marcado"
+                  loading="lazy"
+                />
+                <p>Espacios para hablar, crear y reír.</p>
+              </div>
+              <div class="highlight">
+                <img
+                  src="./assets/check.svg"
+                  alt="Svg de un icono de checkbox marcado"
+                  loading="lazy"
+                />
+                <p>Planes para perderte... y encontrarte.</p>
+              </div>
             </div>
+
+            <a
+              href="events.html"
+              class="btn__primary"
+              title="Descubre tu próximo plan"
+              >Explorar próximos planes</a
+            >
           </div>
         </div>
       </section>
 
-      <!-- Image section  -->
-      <div class="image__section section">
-        <div class="image__block block_container">
-          <div class="image__text">
-            <h2 class="big">Hazlo distinto.</h2>
-            <h2 class="big">Hazlo Social.</h2>
-          </div>
-        </div>
-      </div>
-
       <!-- Events section -->
       <section class="events">
         <div class="events__block block_container">
-          <div class="events__title">
+          <div class="blocks__title">
             <h2 class="big">Próximos eventos</h2>
-            <h3>Hay un plan para ti.</h3>
-            <h3>Y para tus múltiples versiones también.</h3>
+            <h3>
+              Hay un plan para ti, y para tus múltiples versiones también.
+            </h3>
           </div>
 
           <div class="events__container">
@@ -312,7 +334,7 @@
 
       <section>
         <div class="testimonials__block block_container">
-          <div>
+          <div class="blocks__title">
             <h2 class="big">Testimonios</h2>
             <h3 class="big">Esto dicen los que se unieron</h3>
           </div>
@@ -390,6 +412,57 @@
           </div>
         </div>
       </section>
+
+      <!-- Image section  -->
+      <div class="image__section section">
+        <div class="image__block block_container">
+          <div class="image__info">
+            <h3>
+              Únete al club del momento y descubre eventos únicos para conocer
+              gente nueva
+            </h3>
+            <div class="image__text">
+              <div>
+                <h3>Hazlo distinto.</h3>
+                <h3>Hazlo social.</h3>
+              </div>
+
+              <img
+                src="./assets/Frame.svg"
+                alt="Logo de unos dedos"
+                loading="lazy"
+              />
+            </div>
+            <div class="image__input">
+              <div class="input__block">
+                <label for="email"></label>
+                <input
+                  name="email"
+                  type="text"
+                  required
+                  id="email"
+                  placeholder="Tu email"
+                />
+              </div>
+              <a class="btn__primary modal__btn" href="#" title="Me apunto"
+                >Suscribete ahora
+                <svg width="20" height="20">
+                  <use href="./assets/icons.svg#arrow-up-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <picture>
+            <source srcset="./assets/imageBlock.webp" type="image/webp" />
+            <img
+              src="./assets/imageBlockSquare.jpg"
+              alt="Amigos disfrutando en el campo"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
     </main>
 
     <!-- Footer section -->

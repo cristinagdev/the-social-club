@@ -65,32 +65,37 @@
     </header>
     <main>
       <!-- Banner section -->
-      <section class="events__banner block_container">
-        <div>
-          <h1>Planes que te sacan de la rutina</h1>
-          <h2>Gente que merece la pena</h2>
+      <section class="events__banner">
+        <div class="block_container">
+          <h1>Próximos eventos</h1>
         </div>
       </section>
 
       <!-- Filters section -->
       <section>
         <div class="filters block_container">
-          <h4>Filtros</h4>
-
           <div class="filters__btn">
             <button
-              class="event__btn btn__secondary"
+              class="event__btn selected"
+              data-category="all"
+              aria-label="Filtrar todos los eventos"
+            >
+              Todos
+            </button>
+
+            <button
+              class="event__btn"
               data-category="creative"
               aria-label="Filtrar eventos creativos"
             >
               Creativos
               <svg width="20" height="20">
-                <use href="./assets/icons.svg#palette"></use>
+                <use href="./assets/icons.svg#brush"></use>
               </svg>
             </button>
 
             <button
-              class="event__btn btn__secondary"
+              class="event__btn"
               data-category="social"
               aria-label="Filtrar eventos sociales"
             >
@@ -101,7 +106,7 @@
             </button>
 
             <button
-              class="event__btn btn__secondary"
+              class="event__btn"
               data-category="adventure"
               aria-label="Filtrar eventos aventureros"
             >
@@ -112,11 +117,11 @@
             </button>
 
             <button
-              class="event__btn btn__secondary"
+              class="event__btn"
               data-category="cultural"
               aria-label="Filtrar eventos culturales"
             >
-              Cultura y Música
+              Cultura
               <svg width="20" height="20">
                 <use href="./assets/icons.svg#music"></use>
               </svg>
