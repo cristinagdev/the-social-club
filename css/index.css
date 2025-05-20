@@ -918,15 +918,37 @@ dialog {
   & .detail__info {
     & .detail__date {
       flex-wrap: wrap;
-      padding: 2em 0;
+      padding: 2em 1em;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       gap: 2em;
 
       & p {
         font-weight: 600;
         min-width: var(--min-width-layout-s);
+      }
+
+      & .detail__date--info {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2em;
+        flex-wrap: wrap;
+      }
+
+      & .detail__users {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        & img {
+          border-radius: 50%;
+          max-width: 50px;
+        }
+        & img:first-child {
+          margin-right: -40px;
+          z-index: 1;
+        }
       }
     }
 

@@ -14,8 +14,16 @@ const modal = document.getElementById("dialog");
 const renderEventDetailData = (eventData) => {
   detailTitle.innerHTML = eventData.title;
   detailDate.innerHTML = `
+    <div class="detail__date--info">      
         <p>🗓️ ${eventData.time}</p>
         <p>📍 ${eventData.location}</p>
+    </div>
+
+    <div class="detail__users">
+          <img src="./assets/user1.jpg" alt="Foto de perfil de un chico en la naturaleza sonriendo" />
+          <img src="./assets/user2.jpg" alt="oto de perfil de una chica pelirroja sonriendo" />
+          <p>+ 7 más</p>
+    </div>
     `;
   detailDescription.innerHTML = `
         <h3>¿Que vamos a hacer?</h3>
