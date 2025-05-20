@@ -378,17 +378,14 @@ textarea {
 
 /* Description block */
 .description {
-  background-color: var(--light-gray);
-
   .description__block {
     display: flex;
     gap: 2em;
-    justify-items: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 6em auto;
+    margin: 5em auto;
     position: relative;
-    min-height: 600px;
 
     & .description__info {
       min-height: 450px;
@@ -406,15 +403,11 @@ textarea {
         display: flex;
         flex-direction: column;
         gap: 1em;
-        & .highlight {
-          display: flex;
-          align-items: center;
-          gap: 1em;
+      }
 
-          & img {
-            max-width: 30px;
-          }
-        }
+      & a {
+        padding: 0;
+        border-bottom: 1px solid var(--primary);
       }
     }
 
@@ -427,13 +420,6 @@ textarea {
       border-radius: var(--img-border-radius);
       min-width: var(--min-width-layout-s);
 
-      & .smile {
-        max-width: 200px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        animation: spin 15s linear infinite;
-      }
       & picture img {
         border-radius: var(--img-border-radius);
       }
