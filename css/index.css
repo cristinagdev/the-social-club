@@ -384,7 +384,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5em auto;
+    margin: 2em auto;
     position: relative;
 
     & .description__info {
@@ -412,7 +412,7 @@ textarea {
     }
 
     & .description__card {
-      background-image: url("../assets/description-image.jpg");
+      background-image: url("../assets/description-img.jpg");
       background-position: center;
       min-height: 450px;
       flex-grow: 1;
@@ -537,34 +537,41 @@ textarea {
   & .events__container {
     display: flex;
     flex-direction: column;
-    gap: 1.375em;
+    gap: 1em;
 
     & .cards__container {
-      display: grid;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(var(--min-width-layout-s), 1fr)
-      );
-      gap: 2em;
+      display: flex;
+      gap: 1em;
       padding: 2em 0;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    & .event__card {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
     }
     & .event__card img {
       border-radius: var(--img-border-radius);
     }
     & .card__content {
+      flex-grow: 1;
+      flex-basis: 0;
       display: flex;
       align-items: start;
       justify-content: space-between;
+      flex-direction: column;
       gap: 0.5em;
       & p {
         font-weight: 500;
         font-size: 1rem;
       }
 
-      & p,
-      a {
-        flex-grow: 1;
-        flex-basis: 0;
+      & a {
+        padding: 0.5em 0;
       }
     }
 
@@ -645,7 +652,6 @@ textarea {
   h2 {
     padding: 0.5em 0;
     color: var(--primary);
-    /* text-align: center; */
   }
 }
 
@@ -678,7 +684,8 @@ textarea {
     background-color: transparent;
     border-bottom: 2px solid transparent;
     color: var(--gray);
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-size: 1.25rem;
     transition: border-botom 0.3s ease, color 0.3s ease;
 
     &:hover {
@@ -703,40 +710,36 @@ textarea {
     auto-fit,
     minmax(var(--min-width-layout-m), 1fr)
   );
-  gap: 3em;
+  gap: 2em;
+  justify-content: center;
   margin-bottom: 4em;
 
   & .card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
-    & .card__top--text {
-      flex-grow: 1;
-      flex-basis: 0;
-      & h3 {
-        padding: 0.5em 0;
-      }
-    }
     & .card__line {
       height: 1px;
       width: 100%;
-      background-color: #cecece;
+      background-color: var(--gray);
     }
 
-    & .card__image {
-      padding: 1em 0;
+    & picture img {
+      border-radius: var(--img-border-radius);
     }
 
     & .card__body {
-      flex-grow: 1;
-      flex-basis: 0;
-      margin: 2em 0;
+      margin: 1em 0;
       display: flex;
       flex-direction: column;
       gap: 1em;
 
-      & .card__description {
-        font-weight: 600;
+      & .card__title {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        min-height: 180px;
       }
 
       & .card__info {
@@ -927,11 +930,11 @@ dialog {
         display: flex;
         align-items: center;
         gap: 1em;
-        & img {
+        & picture img {
           border-radius: 50%;
           max-width: 50px;
         }
-        & img:first-child {
+        & picture:first-child {
           margin-right: -40px;
           z-index: 1;
         }

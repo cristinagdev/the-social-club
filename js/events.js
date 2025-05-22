@@ -6,7 +6,7 @@ const closeModalButton = document.getElementById("cancel");
 const eventsData = [
   {
     id: 1,
-    title: "Taller de Pintura Moderna en la playa",
+    title: "Taller de pintura en la playa",
     subtitle: "Exprésate con colores y nuevas amistades",
     description:
       "Descubre tu lado artístico con un taller relajado al aire libre, ideal para principiantes o apasionados del arte.",
@@ -19,7 +19,7 @@ const eventsData = [
     time: "Martes 15 de Abril 2025 15:00",
     location: "Centro Cultural Las Artes",
     category: "creative",
-    image: "../assets/paint",
+    image: "../assets/paint-beach",
   },
   {
     id: 2,
@@ -36,39 +36,39 @@ const eventsData = [
     time: "Sábado 20 de Abril 2025 06:00",
     location: "Parque Natural de Collserola",
     category: "adventure",
-    image: "../assets/adventure",
+    image: "../assets/yoga-sunset",
   },
   {
     id: 3,
-    title: "Cinefórum: Película + Debate con Cervezas",
+    title: "Noche de cine + Cervezas",
     subtitle: "Cine, crítica y cervezas entre nuevos amigos",
     description:
-      "Proyección de una película indie seguida de un coloquio distendido con cervezas artesanas.",
+      "Apúntate a una noche de cina seguida de un coloquio distendido con cervezas artesanas.",
     meetingpoint: "Bar cultural 'La Fábrica', sala del fondo.",
-    toBring:
-      "Curiosidad, ideas para compartir y ganas de debatir sin prejuicios.",
+    toBring: "Curiosidad, ideas para compartir y ganas de conectar con gente.",
     bestOfPlan:
       "Ambiente relajado, nuevas perspectivas, buena conversación y cinéfilos con alma crítica.",
     time: "Viernes 12 de Abril 2025 19:30",
     location: "La Fábrica, Espacio Cultural",
     category: "cultural",
-    image: "../assets/cultural",
+    image: "../assets/cinema",
   },
   {
     id: 4,
-    title: "Paseo Fotográfico Temático + Picoteo",
-    subtitle: "Captura la ciudad y compártelo con buen rollo",
+    title: "Customiza tu tote bag + Picoteo",
+    subtitle:
+      "Taller de pintura o bordado sobre bolsos de tela con vino y charlas.",
     description:
-      "Ruta por la ciudad centrada en capturar retratos urbanos, seguida de picoteo para compartir resultados.",
-    meetingpoint: "Plaza del MACBA. Busca al grupo con cámaras.",
+      "Una tarde relajada creando tu bolso de tela con música de fondo y buena compañía. No necesitas experiencia previa, solo ganas de expresarte y compartir un rato diferente.",
+    meetingpoint: "Plaza del MACBA.",
     toBring:
       "Cámara o móvil con buena lente, ropa cómoda y algo para compartir en el picnic.",
     bestOfPlan:
-      "Creatividad callejera, feedback fotográfico entre iguales, ambiente divertido y aprendizaje continuo.",
+      "Ambiente cero presión, momentos creativos compartidos, conversaciones espontáneas y nuevas conexiones sin pantallas de por medio.",
     time: "Domingo 21 de Abril 2025 17:00",
     location: "Centro de Barcelona",
     category: "creative",
-    image: "../assets/paint",
+    image: "../assets/painted-totebags",
   },
   {
     id: 5,
@@ -84,7 +84,7 @@ const eventsData = [
     time: "Sábado 13 de Abril 2025 16:00",
     location: "Barrio Gótico",
     category: "adventure",
-    image: "../assets/adventure",
+    image: "../assets/scaperoom",
   },
   {
     id: 6,
@@ -100,11 +100,11 @@ const eventsData = [
     time: "Jueves 18 de Abril 2025 20:00",
     location: "Casa de un anfitrión local",
     category: "social",
-    image: "../assets/social",
+    image: "../assets/social1",
   },
   {
     id: 7,
-    title: "Club de Lectura No Convencional",
+    title: "Club de Lectura + Brunch especial",
     subtitle: "Libros que remueven y conversaciones profundas",
     description:
       "Lecturas que provocan y remueven, con debates en cafés tranquilos entre gente con inquietudes.",
@@ -115,57 +115,60 @@ const eventsData = [
     time: "Miércoles 17 de Abril 2025 19:00",
     location: "Café Literario",
     category: "cultural",
-    image: "../assets/cultural",
+    image: "../assets/reading-club",
   },
   {
     id: 8,
-    title: "Impro Show + Taller Exprés de Improvisación",
-    subtitle: "Sal de tu zona de confort y ríete a lo grande",
+    title: "Bordado + Merienda",
+    subtitle: "Agujas, hilos y una deliciosa merienda entre nuevos amigos",
     description:
-      "Un espectáculo de impro seguido de un taller interactivo para soltarse y reír en grupo.",
-    meetingpoint: "Teatro Espontáneo, sala B.",
-    toBring: "Ropa cómoda, ganas de reír y de hacer el ridículo (un poco).",
+      "Un taller relajado para aprender técnicas básicas de bordado contemporáneo sobre tote bags, camisetas o parches. Diseña, cose y disfruta de una tarde creativa en buena compañía con una merienda rica.",
+    meetingpoint: "Taller compartido 'La Aguja Rebelde', sala 2.",
+    toBring:
+      "Una prenda que quieras personalizar o usa los materiales del taller.",
     bestOfPlan:
-      "Desinhibición, conexión inmediata con desconocidos, subidón de energía.",
-    time: "Viernes 19 de Abril 2025 21:00",
-    location: "Teatro Espontáneo",
+      "Ritmo tranquilo, charlas espontáneas, creatividad en grupo y un resultado que te llevas a casa. Perfecto para desconectar y conectar con gente creativa.",
+    time: "Domingo 5 de Mayo 2025 17:00",
+    location: "La Aguja Rebelde",
     category: "creative",
-    image: "../assets/paint",
+    image: "../assets/bordado",
   },
   {
     id: 9,
-    title: "Voluntariado Express + Vermut Social",
-    subtitle: "Haz el bien en grupo y comparte un vermut",
+    title: "Ruta en Bici + Vermut",
+    subtitle: "Pedalea con nuevos amigos y descubre un rincón oculto",
     description:
-      "Acción solidaria de pocas horas seguida de vermut en grupo para compartir experiencias.",
-    meetingpoint: "Entrada del banco de alimentos del barrio.",
+      "Un paseo en bicicleta a ritmo tranquilo por senderos urbanos y verdes. Terminamos en un bar de la zona con un vermut compartido, música y juegos al aire libre.",
+    meetingpoint:
+      "Puerta principal del Parc de la Ciutadella. Busca al grupo con cascos.",
     toBring:
-      "Manos listas para ayudar y muchas ganas de conocer gente generosa.",
+      "Bicicleta propia o de alquiler, bebida, algo de comer para compartir.",
     bestOfPlan:
-      "Conexión desde el corazón, impacto positivo y charla amena después de hacer algo bueno.",
-    time: "Domingo 14 de Abril 2025 10:00",
-    location: "Barrio de Gràcia",
-    category: "social",
-    image: "../assets/social",
+      "Actividad física suave, naturaleza en la ciudad, gente con buena onda y un final de plan que no querrás que acabe.",
+    time: "Domingo 14 de Abril 2025 11:00",
+    location: "Barcelona (ruta urbana + parque sorpresa)",
+    category: "adventure",
+    image: "../assets/bike",
   },
   {
     id: 10,
-    title: "Ruta Secreta de Graffitis + Cañas",
+    title: "Ruta Secreta de pubs",
     subtitle: "Descubre el arte urbano más oculto y socialízalo",
     description:
-      "Tour alternativo para descubrir arte urbano y acabar en un bar con buena vibra.",
+      "Tour alternativo para descubrir pubs desconocidos y acabar en un bar con buena vibra.",
     meetingpoint: "Metro Poblenou, salida Rambla.",
-    toBring: "Móvil o cámara, ropa cómoda y curiosidad artística.",
+    toBring:
+      "Móvil o cámara, ropa cómoda y curiosidad por conocer partes de la ciudad desconocidas.",
     bestOfPlan:
-      "Historias sorprendentes, arte en cada esquina y conversaciones espontáneas en cada parada.",
+      "Historias sorprendentes, buena música en cada esquina y conversaciones espontáneas en cada parada.",
     time: "Sábado 27 de Abril 2025 17:00",
     location: "Poblenou",
     category: "cultural",
-    image: "../assets/cultural",
+    image: "../assets/pubs",
   },
   {
     id: 11,
-    title: "Noche de Karaoke y Vibes Positivas",
+    title: "Noche de Karaoke",
     subtitle: "Canta, ríe y suéltate con desconocidos",
     description:
       "Karaoke temático con dinámicas para perder la vergüenza y pasarlo bien desde la primera canción.",
@@ -175,11 +178,11 @@ const eventsData = [
     time: "Viernes 26 de Abril 2025 21:00",
     location: "El Sótano",
     category: "social",
-    image: "../assets/social",
+    image: "../assets/karaoke",
   },
   {
     id: 12,
-    title: "Workshop de Collage + Merienda Creativa",
+    title: "Taller de Arcilla + Merienda",
     subtitle: "Corta, pega y charla entre snacks y revistas",
     description:
       "Taller relajado donde crear arte en papel mientras compartes merienda con otros creativos.",
@@ -189,7 +192,7 @@ const eventsData = [
     time: "Domingo 28 de Abril 2025 16:00",
     location: "Manos Libres",
     category: "creative",
-    image: "../assets/paint",
+    image: "../assets/ceramic",
   },
   {
     id: 13,
@@ -204,22 +207,22 @@ const eventsData = [
     time: "Sábado 4 de Mayo 2025 17:00",
     location: "Playa de Badalona",
     category: "adventure",
-    image: "../assets/adventure",
+    image: "../assets/picnic",
   },
   {
     id: 14,
-    title: "Fiesta de Intercambio de Idiomas + Juegos",
+    title: "Fiesta de Intercambio de Idiomas",
     subtitle: "Aprende otro idioma en un entorno divertido",
     description:
       "Conecta con locales e internacionales a través de dinámicas lingüísticas divertidas.",
     meetingpoint: "Terraza del hostal MundoMundo.",
-    "¿Qué traer?": "Tu mejor sonrisa y curiosidad por otros acentos.",
-    "Lo mejor de este plan":
+    toBring: "Tu mejor sonrisa y curiosidad por aprender otros idiomas.",
+    bestOfPlan:
       "Cero clases aburridas, mucha risa, conexiones interculturales y potenciales planes futuros.",
     time: "Jueves 25 de Abril 2025 19:30",
     location: "Hostal MundoMundo",
     category: "social",
-    image: "../assets/social",
+    image: "../assets/languages",
   },
   {
     id: 15,
@@ -234,7 +237,7 @@ const eventsData = [
     time: "Viernes 3 de Mayo 2025 20:00",
     location: "Centro multicultural",
     category: "social",
-    image: "../assets/social",
+    image: "../assets/food-tour",
   },
 ];
 
@@ -273,26 +276,22 @@ function renderEventsCards() {
       : eventsData;
 
   eventsContainer.innerHTML = "";
-
   eventsFiltered.forEach((event) => {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-            <div class="card__top">
                  <picture>
                   <source srcset=${event.image}.webp type="image/webp" />
                   <img src=${event.image}.jpg loading="lazy" alt=${event.title} />
                 </picture>
-                <div class="card__top--text">
-                    <h3 class="card__title">${event.title}</h3>
+ 
+            <div class="card__body">
+              <div class="card__title">
+                    <h3>${event.title}</h3>
                     <p class="card__description">
                     ${event.subtitle}
                     </p>
-                </div>
-             
-            </div>
- 
-            <div class="card__body">
+              </div>
                 <span class="card__line"></span>
                 <div class="card__info">
                     <p>🗓️ ${event.time}</p>

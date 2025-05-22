@@ -20,8 +20,14 @@ const renderEventDetailData = (eventData) => {
     </div>
 
     <div class="detail__users">
-          <img src="./assets/user1.jpg" alt="Foto de perfil de un chico en la naturaleza sonriendo" />
-          <img src="./assets/user2.jpg" alt="oto de perfil de una chica pelirroja sonriendo" />
+              <picture>
+                  <source srcset="./assets/user1.webp" type="image/webp" />
+                  <img src="./assets/user1.jpg" alt="Foto de perfil de un chico en la naturaleza sonriendo" />
+              </picture>
+              <picture>
+                  <source srcset="./assets/user2.webp" type="image/webp" />
+                  <img src="./assets/user2.jpg" alt="Foto de perfil de un chico en la naturaleza sonriendo" />
+              </picture>
           <p>+ 7 más</p>
     </div>
     `;
