@@ -1061,7 +1061,8 @@ dialog {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    min-height: 600px;
+    gap: 5em;
+    min-height: 500px;
 
     & h4 {
       font-size: 2rem;
@@ -1071,6 +1072,7 @@ dialog {
       display: flex;
       flex-direction: column;
       gap: 1em;
+      align-items: center;
       & p {
         font-size: 1.5rem;
         line-height: 3rem;
@@ -1081,6 +1083,7 @@ dialog {
         flex-grow: 1;
         flex-basis: 0;
         min-width: var(--min-width-layout-s);
+        text-align: center;
       }
     }
 
